@@ -1,0 +1,321 @@
+Card,Card Type,Card Type 2,Type,Attribute,Level,ATK,OWN,Purpose,Rating,
+Asura Priest,Monster,Spirit,Fairy,LIGHT,4,1700,Y,Defense removal,1,02134346
+Hebo Lord of the River,Monster,Spirit,Aqua,WATER,4,1800,Y,Utility,,90365482
+Tsukuyomi,Monster,Spirit,Spellcaster,DARK,4,1400,Y,Utility,3,34853266
+Alexandrite Dragon,Monster,Normal,Dragon,LIGHT,4,2000,Y,Beater,,43096270
+Gene-Warped Warwolf,Monster,Normal,Beast-Warrior,DARK,4,2000,Y,Beater,,69247929
+Leotron,Monster,Normal,Cyberse,EARTH,4,2000,Y,Beater,,47226949
+Megalosmasher X,Monster,Normal,Dinosaur,WATER,4,2000,Y,Beater,,81823360
+Mekk-Knight Avram,Monster,Normal,Psychic,LIGHT,4,2000,Y,Beater,,84754430
+Mystery Shell Dragon,Monster,Normal,Wyrm,LIGHT,4,2000,Y,Beater,,18108166
+Phantom Gryphon,Monster,Normal,Winged Beast,WIND,4,2000,Y,Beater,,74852097
+"Shiny Black ""C"" Squader",Monster,Normal,Insect,EARTH,4,2000,Y,Beater,,04148264
+Zombino,Monster,Normal,Zombie,EARTH,4,2000,Y,Beater,,14575467
+Frostosaurus,Monster,Normal,Dinosaur,WATER,6,2600,Y,Beater,,06631034
+Blue-Eyes White Dragon,Monster,Normal,Dragon,LIGHT,8,3000,Y,Beater,,89631139
+Imduk the World Chalice Dragon,Monster,LINK,Dragon,WIND,1,600,Y,Battle removal,,31226177
+Link Spider,Monster,LINK,Cyberse,EARTH,1,1000,Y,Utility,,98978921
+Aussa the Earth Charmer Immovable,Monster,LINK,Spellcaster,EARTH,2,1850,Y,Utility,,97661969
+Hip Hoshiningen,Monster,LINK,Fairy,LIGHT,2,1400,Y,Utility,,07778726
+Knightmare Cerberus,Monster,LINK,Fiend,EARTH,2,1600,Y,Monster removal,,75452921
+Knightmare Phoenix,Monster,LINK,Fiend,FIRE,2,1900,Y,St removal,,02857636
+Missus Radiant,Monster,LINK,Beast,EARTH,2,1400,Y,Utility,,03987233
+Pentestag,Monster,LINK,Cyberse,DARK,2,1600,Y,Utility,,72336818
+Wee Witch's Apprentice,Monster,LINK,Spellcaster,DARK,2,1400,Y,Utility,,71384012
+Curious the Lightsworn Dominion,Monster,LINK,Warrior,LIGHT,3,2400,Y,Utility,,98095162
+Decode Talker,Monster,LINK,Cyberse,DARK,3,2300,Y,Beater,,01861629
+Gaia Saber the Lightning Shadow,Monster,LINK,Warrior,EARTH,3,2600,Y,Beater,,67598234
+Powercode Talker,Monster,LINK,Cyberse,FIRE,3,2300,Y,Beater,,15844566
+Borrelguard Dragon,Monster,LINK,Dragon,DARK,4,3000,Y,Beater w/protection,,68987122
+Topological Bomber Dragon,Monster,LINK,Cyberse,DARK,4,3000,Y,Beater w/ utility,,05821478
+Crystal Seer,Monster,Flip Effect,Spellcaster,WATER,1,200,Y,Draw power,,82099401
+Magical Merchant,Monster,Flip Effect,Insect,LIGHT,1,200,Y,Utility,,32362575
+Magician of Faith,Monster,Flip Effect,Spellcaster,LIGHT,1,300,Y,Utility,3,31560081
+Scapeghost,Monster,Flip Effect,Zombie,DARK,1,0,Y,Swarm,3,73915051
+Apprentice Piper,Monster,Flip Effect,Spellcaster,DARK,2,100,Y,Swarm,,64977888
+Man-Eater Bug,Monster,Flip Effect,Insect,EARTH,2,450,Y,Monster removal,,54652250
+Morphing Jar,Monster,Flip Effect,Rock,EARTH,2,700,Y,Draw power,,33508719
+Penguin Soldier,Monster,Flip Effect,Aqua,WATER,2,750,Y,Utility,3,93920745
+Cyber Jar,Monster,Flip Effect,Rock,DARK,3,900,Y,Wild card,,34124316
+Morphing Jar #2,Monster,Flip Effect,Rock,EARTH,3,800,Y,Wild card,2,79106360
+Dekoichi the Battlechanted Locomotive,Monster,Flip Effect,Machine,DARK,4,1400,Y,Draw power,,87621407
+Gravekeeper's Guard,Monster,Flip Effect,Spellcaster,DARK,4,1000,Y,Monster removal,2,37101832
+Shaddoll Dragon,Monster,Flip Effect,Spellcaster,DARK,4,1900,Y,Utility,3,77723643
+Slate Warrior,Monster,Flip Effect,Fiend,WIND,4,1900,Y,Beater,2,78636495
+Shaddoll Beast,Monster,Flip Effect,Spellcaster,DARK,5,2200,Y,Draw power,,03717252
+Pot of the Forbidden,Monster,Flip Effect,Rock,EARTH,9,2000,Y,Wild card,2,91501248
+A/D Changer,Monster,Effect,Warrior,LIGHT,1,100,Y,Utility,3,96146814
+Amarylease,Monster,Effect,Plant,EARTH,1,100,Y,Tribute fodder,3,18988391
+Battle Fader,Monster,Effect,Fiend,DARK,1,0,Y,Defense,3,19665973
+Copycat,Monster,Effect,Spellcaster,LIGHT,1,0,Y,Beater,2,26376390
+Cosmic Compass,Monster,Effect,Machine,EARTH,1,100,Y,Tribute fodder,2,27450400
+Cyber Valley,Monster,Effect,Machine,LIGHT,1,0,Y,Defense,2,03657444
+Effect Veiler,Monster,Effect,Spellcaster,LIGHT,1,0,Y,Monster eff negation,2,97268402
+Glow-Up Bulb,Monster,Effect,Plant,EARTH,1,100,Y,Swarm,3,67441435
+Rainbow Kuriboh,Monster,Effect,Fiend,LIGHT,1,100,Y,Defense,2,02830693
+Relinkuriboh,Monster,Effect,Fiend,DARK,1,300,Y,Utility,2,50185950
+Sinister Serpent,Monster,Effect,Reptile,WATER,1,300,Y,Floater,3,08131171
+Sphere Kuriboh,Monster,Effect,Fiend,DARK,1,300,Y,Defense,2,33245030
+Bacon Saver,Monster,Effect,Zombie,DARK,2,700,Y,Defense,2,82593786
+Ghostrick Yuki-Onna,Monster,Effect,Spellcaster,DARK,2,1000,Y,Utility,2,54490275
+Ret-Time Reviver Emit-ter,Monster,Effect,Fairy,DARK,2,800,Y,Utility,1,55702233
+Mystic Swordsman LV2,Monster,Effect,Warrior,EARTH,2,700,Y,Defense removal,3,47507260
+Predaplant Flytrap,Monster,Effect,Plant,DARK,2,400,Y,Beater,3,96622984
+Ryko Lightsworn Hunter,Monster,Effect,Beast,LIGHT,2,200,Y,Removal,3,21502796
+Wrecker Panda,Monster,Effect,Beast,EARTH,2,800,Y,Floater,1,28139785
+Blackwing - Steam the Cloak,Monster,Effect,Winged Beast,DARK,3,800,Y,Floater,3,09047460
+Card Trooper,Monster,Effect,Machine,EARTH,3,400,Y,Beater w/mill,3,85087012
+Construction Train Signal Red,Monster,Effect,Machine,EARTH,3,1000,Y,Defense,3,34475451
+Dandylion,Monster,Effect,Plant,EARTH,3,300,Y,Swarm,3,15341821
+Drill Barnacle,Monster,Effect,Fish,WATER,3,300,Y,Damage,2,24137081
+Edge Imp Sabres,Monster,Effect,Fiend,DARK,3,1200,Y,Swarm,2,30068120
+Exploder Dragon,Monster,Effect,Dragon,EARTH,3,1000,Y,Battle removal,2,20586572
+Injection Fairy Lily,Monster,Effect,Spellcaster,EARTH,3,400,Y,Beater,3,79575620
+Jowgen the Spiritualist,Monster,Effect,Spellcaster,LIGHT,3,200,Y,Mass removal,2,41855169
+Kuribandit,Monster,Effect,Fiend,DARK,3,1000,Y,Mill,1,16404809
+Legendary Jujitsu Master,Monster,Effect,Rock,EARTH,3,1300,Y,Defense,2,25773409
+Mecha Phantom Beast Hamstrat,Monster,Effect,Machine,WIND,3,1100,Y,Swarm,3,66200210
+Necro Gardna,Monster,Effect,Warrior,DARK,3,600,Y,Defense,2,04906301
+Neo-Spacian Grand Mole,Monster,Effect,Rock,EARTH,3,700,Y,Battle removal,1,80344569
+Pero Pero Cerperus,Monster,Effect,Beast,EARTH,3,0,Y,Removal,2,69764158
+Sangan,Monster,Effect,Fiend,DARK,3,1000,Y,Utility,1,26202165
+Snowman Eater,Monster,Effect,Aqua,WATER,3,0,Y,Monster removal,3,91133740
+Spell Striker,Monster,Effect,Spellcaster,LIGHT,3,900,Y,Swarm,3,93187568
+Spirit Reaper,Monster,Effect,Zombie,DARK,3,300,Y,Defense,2,23205979
+Tanngrisnir of the Nordic Beasts,Monster,Effect,Beast,EARTH,3,800,Y,Swarm,3,15394083
+Armored Bee,Monster,Effect,Insect,WIND,4,1600,Y,Battle removal,,86915847
+Bazoo the Soul-Eater,Monster,Effect,Beast,EARTH,4,1800,Y,Beater,,40133511
+Black Veloci,Monster,Effect,Dinosaur,EARTH,4,1800,Y,Beater,1,52319752
+Blackwing - Zephyros the Elite,Monster,Effect,Winged Beast,DARK,4,1600,Y,Swarm,,14785765
+Blade Knight,Monster,Effect,Warrior,LIGHT,4,1600,Y,Beater,2,39507162
+Breaker the Magical Warrior,Monster,Effect,Spellcaster,DARK,4,1600,Y,St removal,3,71413901
+Bull Blader,Monster,Effect,Warrior,EARTH,4,1600,Y,Battle removal,3,36088082
+Card Guard,Monster,Effect,Fiend,DARK,4,1600,Y,Beater w/ utility,,04694209
+Celtic Guard of Noble Arms,Monster,Effect,Warrior,EARTH,4,2100,Y,Beater,,45531624
+D.D. Assailant,Monster,Effect,Warrior,EARTH,4,1700,Y,Battle removal,,70074904
+D.D. Warrior Lady,Monster,Effect,Warrior,LIGHT,4,1500,Y,Battle removal,,07572887
+Danger! Mothman!,Monster,Effect,Insect,LIGHT,4,1800,Y,Utility,,52350806
+Denko Sekka,Monster,Effect,Thunder,LIGHT,4,1700,Y,St removal,2,13974207
+Dino-Sewing,Monster,Effect,Fiend,EARTH,4,0,Y,Defense,1,27143874
+Don Zaloog,Monster,Effect,Warrior,DARK,4,1400,Y,Hand advantage,,76922029
+Doomcaliber Knight,Monster,Effect,Fiend,DARK,4,1900,Y,Beater,2,78700060
+Drillroid,Monster,Effect,Machine,EARTH,4,1600,Y,Defense removal,2,71218746
+Ehren Lightsworn Monk,Monster,Effect,Warrior,LIGHT,4,1600,Y,Defense removal,2,44178886
+Electromagnetic Turtle,Monster,Effect,Machine,LIGHT,4,0,Y,Defense,3,34710660
+Engraver of the Mark,Monster,Effect,Spellcaster,DARK,4,1800,Y,Removal,2,50078320
+Evilswarm O'Lantern,Monster,Effect,Pyro,DARK,4,1650,Y,Monster removal,,72429240
+Evilswarm Salamandra,Monster,Effect,Dinosaur,DARK,4,1850,Y,Beater,,04058065
+Evilswarm Thunderbird,Monster,Effect,Thunder,DARK,4,1650,Y,Beater,,78663366
+Exarion Universe,Monster,Effect,Beast-Warrior,DARK,4,1800,Y,Beater,,63749102
+Exiled Force,Monster,Effect,Warrior,EARTH,4,1000,Y,Monster removal,1,74131780
+Fencing Fire Ferret,Monster,Effect,Beast,FIRE,4,1700,Y,Beater w/ removal,2,97396380
+Fossil Dyna Pachycephalo,Monster,Effect,Rock,EARTH,4,1200,Y,Mass removal,2,42009836
+Gaia The Fierce Knight Origin,Monster,Effect,Warrior,EARTH,4,1600,Y,Utility,1,50354944
+Ghost Bird of Bewitchment,Monster,Effect,Winged Beast,DARK,4,1300,Y,Utility,3,15419596
+Gilfe the Phantom Bird,Monster,Effect,Winged Beast,WIND,4,1500,Y,St removal,,00899287
+Heroic Challenger Assault Halberd,Monster,Effect,Warrior,EARTH,4,1800,Y,Beater w/ swarm,,65848811
+Holding Arms,Monster,Effect,Fiend,DARK,4,500,Y,Defense,,43730887
+Holding Legs,Monster,Effect,Fiend,DARK,4,800,Y,Defense,,70124586
+Jain Lightsworn Paladin,Monster,Effect,Warrior,LIGHT,4,1800,Y,Beater w/ mill,,96235275
+Juragedo,Monster,Effect,Fiend,DARK,4,1700,Y,Swarm w/ battle winner,,59546797
+Kycoo Ghost Destroyer,Monster,Effect,Spellcaster,DARK,4,1800,Y,Beater,2,88240808
+Lyla Lightsworn Sorceress,Monster,Effect,Spellcaster,LIGHT,4,1700,Y,Beater w/ st removal,3,22624373
+Muscle Medic,Monster,Effect,Warrior,WATER,4,2200,Y,Beater,3,04848423
+Ninja Grandmaster Sasuke,Monster,Effect,Warrior,DARK,4,1800,Y,Defense removal,2,04041838
+Noble Knight Brothers,Monster,Effect,Warrior,LIGHT,4,1200,Y,Defense,2,57690191
+Obnoxious Celtic Guard,Monster,Effect,Warrior,EARTH,4,1400,Y,Defense,2,52077741
+Performage Trick Clown,Monster,Effect,Spellcaster,LIGHT,4,1600,Y,Tribute fodder,2,67696066
+Performapal Whip Snake,Monster,Effect,Reptile,EARTH,4,1700,Y,Battle removal,3,79967395
+Phantom Skyblaster,Monster,Effect,Fiend,DARK,4,1100,Y,Swarm,2,12958919
+Photon Thrasher,Monster,Effect,Warrior,LIGHT,4,2100,Y,Beater w/ swarm,3,65367484
+Raiden Hand of the Lightsworn,Monster,Effect,Warrior,LIGHT,4,1700,Y,Beater w/ mill,2,77558536
+Speedroid Menko,Monster,Effect,Machine,WIND,4,100,Y,Defense,2,16947147
+SPYRAL Super Agent,Monster,Effect,Warrior,EARTH,4,1900,Y,Swarm w/ st removal,3,41091257
+Tackle Crusader,Monster,Effect,Rock,EARTH,4,1500,Y,Utility,2,12467005
+Tardy Orc,Monster,Effect,Fiend,DARK,4,2200,Y,Beater,3,64892035
+Thunder King Rai-Oh,Monster,Effect,Thunder,LIGHT,4,1900,Y,Utility,2,71564252
+Tribe Infecting Virus,Monster,Effect,Zombie,WATER,4,1600,Y,Mass removal,2,33184167
+Wall of Illusion,Monster,Effect,Fiend,DARK,4,1000,Y,Defense,2,13945283
+Witch of the Black Forest,Monster,Effect,Spellcaster,DARK,4,1100,Y,Utility,1,78010363
+Airknight Parshath,Monster,Effect,Fairy,LIGHT,5,1900,Y,Draw power,2,18036057
+Cyber Dragon,Monster,Effect,Machine,LIGHT,5,2100,Y,Beater,3,70095154
+Darkflare Dragon,Monster,Effect,Dragon,DARK,5,2400,Y,Beater,,25460258
+Fantastic Striborg,Monster,Effect,Machine,WIND,5,2200,Y,Beater w/ removal,,79176962
+Guardian Sphinx,Monster,Effect,Rock,EARTH,5,1700,Y,Defense,,40659562
+Kaiser Vorse Raider,Monster,Effect,Beast-Warrior,DARK,5,1900,Y,Beater,2,93927067
+Linkslayer,Monster,Effect,Cyberse,EARTH,5,2000,Y,Beater w/ st removal,,35595518
+Ancient Gear Beast,Monster,Effect,Machine,EARTH,6,2000,Y,Beater w/ protection,1,10509340
+Blackwing - Gofu the Vague Shadow,Monster,Effect,Winged Beast,DARK,6,0,Y,Swarm,3,09929398
+Breaker the Dark Magical Warrior,Monster,Effect,Spellcaster,DARK,6,1600,Y,St removal,2,22923081
+Caius the Shadow Monarch,Monster,Effect,Fiend,DARK,6,2400,Y,Beater w/ removal,,09748752
+Chaos Sorcerer,Monster,Effect,Spellcaster,DARK,6,2300,Y,Beater w/ removal,,09596126
+Dark Ruler Ha Des,Monster,Effect,Fiend,DARK,6,2450,Y,Beater w/protection,3,53982768
+Great Maju Garzett,Monster,Effect,Fiend,DARK,6,0,Y,Beater,1,47942531
+Jinzo,Monster,Effect,Machine,DARK,6,2400,Y,Beater w/protection,,77585513
+Lightpulsar Dragon,Monster,Effect,Dragon,LIGHT,6,2500,Y,Beater,2,99365553
+Majesty's Fiend,Monster,Effect,Fiend,LIGHT,6,2400,Y,Beater w/ protection,,33746252
+Mobius the Frost Monarch,Monster,Effect,Aqua,WATER,6,2400,Y,Beater w/ st removal,,04929256
+Nine-Tailed Fox,Monster,Effect,Fiend,FIRE,6,2200,Y,Utility,,27198001
+Parry Knights,Monster,Effect,Warrior,EARTH,6,2300,Y,Beater w/swarm,,17988746
+Raiza the Storm Monarch,Monster,Effect,Winged Beast,WIND,6,2400,Y,Beater w/ removal,2,73125233
+Seleglare the Luminous Lunar Dragon,Monster,Effect,Dragon,LIGHT,6,2400,N,Utility,2,29303524
+Vampire Red Baron,Monster,Effect,Zombie,DARK,6,2400,Y,Beater w/ utility,3,06917479
+Vanity's Fiend,Monster,Effect,Fiend,DARK,6,2400,Y,Beater w/ protection,2,47084486
+Danger! Dogman!,Monster,Effect,Beast,DARK,7,2400,Y,Beater w/ utility,2,26302107
+Gorz The Emissary of Darkness,Monster,Effect,Fiend,DARK,7,2700,Y,Defense,,44330098
+Lord Gaia the Fierce Knight,Monster,Effect,Warrior,EARTH,7,2300,Y,Beater,,08910971
+Gaia the Magical Knight,Monster,Effect,Warrior,LIGHT,7,2300,Y,Beater,2,34130561
+Tenyi Spirit - Vishuda,Monster,Effect,Wyrm,DARK,7,1500,Y,Utility,2,23431858
+Orgoth the Relentless,Monster,Effect,Warrior,EARTH,7,2500,Y,Wild card,,15744417
+Ancient Gear Golem,Monster,Effect,Machine,EARTH,8,3000,Y,Beater w/ protection,,83104731
+B.E.S. Blaster Cannon Core,Monster,Effect,Machine,LIGHT,8,2500,Y,Beater w/swarm,,84257883
+Beast King Barbaros,Monster,Effect,Beast-Warrior,EARTH,8,3000,Y,Beater,,78651105
+Dark Magician of Chaos,Monster,Effect,Spellcaster,DARK,8,2800,Y,Beater w/ utility,1,40737112
+Destiny HERO - Plasma,Monster,Effect,Warrior,DARK,8,1900,Y,Beater w/ removal,,83965310
+Legendary Maju Garzett,Monster,Effect,Fiend,DARK,8,0,Y,Beater,,12338068
+Galaxy-Eyes Photon Dragon,Monster,Effect,Dragon,LIGHT,8,3000,Y,Beater w/ protection,3,93717133
+Gandora X the Dragon of Demolition,Monster,Effect,Dragon,DARK,8,0,Y,Beater w/ removal,,71525232
+Gizmek Orochi The Serpentron Sky Slasher,Monster,Effect,Machine,DARK,8,2450,Y,Beater,1,71197066
+Kozmo Dark Destroyer,Monster,Effect,Machine,DARK,8,3000,Y,Beater w/ removal,2,55885348
+Light and Darkness Dragon,Monster,Effect,Dragon,LIGHT,8,2800,Y,Beater w/ negation,3,47297616
+Odd-Eyes Advance Dragon,Monster,Effect,Dragon,DARK,8,3000,Y,Beater w/revival,3,61391302
+Orbital Hydralander,Monster,Effect,Machine,DARK,8,3000,Y,Beater w/ removal,,44009443
+Simorgh Lord of the Storm,Monster,Effect,Winged-Beast,WIND,8,2900,Y,Beater w/protection,2,95192919
+Swordsman of Revealing Light,Monster,Effect,Warrior,LIGHT,8,0,Y,Defense,,64605089
+The Atmosphere,Monster,Effect,Winged Beast,WIND,8,1000,Y,Beater w/ removal,2,14466224
+The Blazing Mars,Monster,Effect,Pyro,FIRE,8,2600,Y,Beater,,15033525
+Vision HERO Witch Raider,Monster,Effect,Warrior,DARK,8,2700,N,Beater w/st removal,2,82697428
+Ancient Gear Reactor Dragon,Monster,Effect,Machine,EARTH,9,3000,Y,Beater w/ protection,,44874522
+Raviel Lord of Phantasms - Shimmering Scraper,Monster,Effect,Fiend,DARK,10,4000,Y,Beater,2,28651380
+The Supremacy Sun,Monster,Effect,Fiend,DARK,10,3000,Y,Beater,3,51402908
+Tragoedia,Monster,Effect,Fiend,DARK,10,?,Y,Wild card,,98777036
+Action Magic - Double Banking,Spell,Quick,,,,,Y,Defense removal,1,35498188
+Anti-Magic Arrows,Spell,Quick,,,,,Y,St removal,,97120394
+Book of Eclipse,Spell,Quick,,,,,Y,Utility,,35480699
+Book of Moon,Spell,Quick,,,,,Y,Utility,,14087893
+Cosmic Cyclone,Spell,Quick,,,,,Y,St removal,,08267140
+Ego Boost,Spell,Quick,,,,,Y,Battle winner,,73178098
+Enemy Controller,Spell,Quick,,,,,Y,Utility,,98045062
+Fires of Doomsday,Spell,Quick,,,,,Y,Tribute fodder,,46173679
+Forbidden Chalice,Spell,Quick,,,,,Y,Utility,,25789292
+Forbidden Lance,Spell,Quick,,,,,Y,Utility,,27243130
+Forbidden Scripture,Spell,Quick,,,,,Y,Utility,,54773234
+Gravity Lash,Spell,Quick,,,,,Y,Battle winner,,69319869
+Mystical Space Typhoon,Spell,Quick,,,,,Y,St removal,3,05318639
+Rebellion,Spell,Quick,,,,,Y,Utility,3,87567063
+Scapegoat,Spell,Quick,,,,,Y,Utility,,73915051
+Shrink,Spell,Quick,,,,,Y,Battle winner,,55713623
+Super Rush Headlong,Spell,Quick,,,,,Y,Battle winner,,48422921
+The Monarchs Stormforth,Spell,Quick,,,,,Y,Monster removal,,79844764
+Twin Twisters,Spell,Quick,,,,,Y,St removal,3,43898403
+Back-Up Rider,Spell,Normal,,,,,Y,Battle winner,,68833958
+Card Destruction,Spell,Normal,,,,,Y,Draw power,,72892473
+Card of Demise,Spell,Normal,,,,,Y,Draw power,,59750328
+Confiscation,Spell,Normal,,,,,Y,Hand advantage,,17375316
+Creature Swap,Spell,Normal,,,,,Y,Wild card,2,31036355
+Dark Hole,Spell,Normal,,,,,Y,Mass removal,,53129443
+Delinquent Duo,Spell,Normal,,,,,Y,Hand advantage,,44763025
+Double Summon,Spell,Normal,,,,,Y,Swarm,2,43422537
+Galaxy Cyclone,Spell,Normal,,,,,Y,St removal,3,05133471
+Giant Trunade,Spell,Normal,,,,,Y,St removal,3,42703248
+Graceful Charity,Spell,Normal,,,,,Y,Draw power,2,79571449
+Heavy Storm,Spell,Normal,,,,,Y,St removal,3,19613556
+Hey! Trunade,Spell,Normal,,,,,Y,St removal,3,64697431
+Lullaby of Obedience,Spell,Normal,,,,,Y,Wild card,2,39238953
+Brain Control,Spell,Normal,,,,,Y,Wild card,,87910978
+Monster Reborn,Spell,Normal,,,,,Y,Revival,3,83764718
+Monster Reborn Reborn,Spell,Normal,,,,,Y,Revival,3,50213848
+Night Beam,Spell,Normal,,,,,Y,St removal,3,89882100
+Nobleman of Crossout,Spell,Normal,,,,,Y,Defense removal,3,71044499
+One-Time Passcode,Spell,Normal,,,,,Y,Tribute fodder,3,93104632
+Photon Sanctuary,Spell,Normal,,,,,Y,Tribute fodder,3,17418744
+Pot of Avarice,Spell,Normal,,,,,Y,Draw power,,67169062
+Pot of Desires,Spell,Normal,,,,,Y,Draw power,,35261759
+Pot of Dichotomy,Spell,Normal,,,,,Y,Draw power,,98672567
+Pot of Duality,Spell,Normal,,,,,Y,Draw power,,98645731
+Pot of Greed,Spell,Normal,,,,,Y,Draw power,,55144522
+Reasoning,Spell,Normal,,,,,Y,Wild card,,58577036
+Riryoku,Spell,Normal,,,,,Y,Battle removal,,34016756
+Soul Charge,Spell,Normal,,,,,Y,Revival,,54447022
+Summon Dice,Spell,Normal,,,,,Y,Swarm,,41139112
+Swords of Revealing Light,Spell,Normal,,,,,Y,Defense,,72302403
+The Shallow Grave,Spell,Normal,,,,,Y,Revival,3,43434803
+Tribute Burial,Spell,Normal,,,,,Y,Tribute fodder,3,80230510
+Unexpected Dai,Spell,Normal,,,,,Y,Swarm,,00911883
+Water of Life,Spell,Normal,,,,,Y,Revival,2,07133305
+Mausoleum of the Emperor,Spell,Field,,,,,Y,Tribute fodder,,80921533
+Pacifis the Phantasm City,Spell,Field,,,,,Y,Swarm,2,02819435
+Axe of Despair,Spell,Equip,,,,,Y,Battle winner,,40619825
+Axe of Fools,Spell,Equip,,,,,Y,Battle winner,,19578592
+Darkworld Shackles,Spell,Equip,,,,,Y,Battle removal,,83584898
+Mage Power,Spell,Equip,,,,,Y,Battle winner,,83746708
+Megamorph,Spell,Equip,,,,,Y,Battle winner,,22046459
+Mist Body,Spell,Equip,,,,,Y,Protection,,47529357
+Mordschlag,Spell,Equip,,,,,Y,Protection,2,12760674
+Premature Burial,Spell,Equip,,,,,Y,Revival,,70828912
+Snatch Steal,Spell,Equip,,,,,Y,Utility,,45986603
+United We Stand,Spell,Equip,,,,,Y,Battle winner,3,56747793
+White Veil,Spell,Equip,,,,,Y,Utility,,49306994
+Blockout Curtain,Spell,Continuous,,,,,Y,Utility,3,53167658
+Burden of the Mighty,Spell,Continuous,,,,,Y,Battle winner,,44947065
+Different Dimension Gate,Spell,Continuous,,,,,Y,Monster removal,,56460688
+Shard of Greed,Spell,Continuous,,,,,Y,Draw power,3,33904024
+Supply Squad,Spell,Continuous,,,,,Y,Draw power,,17626381
+Wonder Balloons,Spell,Continuous,,,,,Y,Battle winner,,78574395
+Back to the Front,Trap,Normal,,,,,Y,Revival,3,59919307
+Blazing Mirror Force,Trap,Normal,,,,,Y,Battle winner,,75249652
+Burst Rebirth,Trap,Normal,,,,,Y,Revival,,50243722
+Ceasefire,Trap,Normal,,,,,Y,Defense removal,,36468556
+Compulsory Escape Device,Trap,Normal,,,,,Y,Monster removal,,48216773
+Compulsory Evacuation Device,Trap,Normal,,,,,Y,Utility,,94192409
+Counter Gate,Trap,Normal,,,,,Y,Wild card,2,94561645
+Defense Draw,Trap,Normal,,,,,Y,Draw power,1,24268052
+Double Magical Arm Bind,Trap,Normal,,,,,Y,Wild card,3,72621670
+Drowning Mirror Force,Trap,Normal,,,,,Y,Battle winner,2,47475363
+Dust Tornado,Trap,Normal,,,,,Y,St removal,2,60082869
+Evenly Matched,Trap,Normal,,,,,Y,Mass removal,,15693423
+Ghosts of the Past,Trap,Normal,,,,,Y,Battle winner,,51099515
+Heavy Storm Duster,Trap,Normal,,,,,Y,St removal,,23924608
+Lost Wind,Trap,Normal,,,,,Y,Monster eff removal,,74003290
+Magic Cylinder,Trap,Normal,,,,,Y,Damage,,62279055
+Memory of an Adversary,Trap,Normal,,,,,Y,Utility,,60080151
+Metalmorph,Trap,Normal,,,,,Y,Battle winner,,68540058
+Mirror Force,Trap,Normal,,,,,Y,Mass removal,,44095762
+Needle Ceiling,Trap,Normal,,,,,Y,Mass removal,,38411870
+Nordic Relic Laeveteinn,Trap,Normal,,,,,Y,Battle removal,,89792713
+Paleozoic Canadia,Trap,Normal,,,,,Y,Utility,,98414735
+Paleozoic Eldonia,Trap,Normal,,,,,Y,Battle winner,,02376209
+Paleozoic Hallucigenia,Trap,Normal,,,,,Y,Battle winner,,61420130
+Phantom Knights' Wing,Trap,Normal,,,,,Y,Battle winner,,98431356
+Phoenix Wing Wind Blast,Trap,Normal,,,,,Y,Removal,,63356631
+Pinpoint Guard,Trap,Normal,,,,,Y,Revival,,44509898
+Prideful Roar,Trap,Normal,,,,,Y,Battle winner,,66518841
+Quaking Mirror Force,Trap,Normal,,,,,Y,Battle winner,,40838625
+Ring of Destruction,Trap,Normal,,,,,Y,Monster removal,,83555666
+Setuppercut,Trap,Normal,,,,,Y,Utility,,19590644
+Storming Mirror Force,Trap,Normal,,,,,Y,Battle winner,,05650082
+Switcheroo,Trap,Normal,,,,,Y,Wild card,,30426226
+The Deep Grave,Trap,Normal,,,,,Y,Revival,,17688543
+The Golden Apples,Trap,Normal,,,,,Y,Defense,,42671151
+Torrential Tribute,Trap,Normal,,,,,Y,Mass removal,2,53582587
+Waking the Dragon,Trap,Normal,,,,,Y,Wild card,3,10813327
+Wall of Disruption,Trap,Normal,,,,,Y,Battle winner,,58169731
+Windstorm of Etaqua,Trap,Normal,,,,,Y,Utility,,59744639
+Horn of Heaven,Trap,Counter,,,,,Y,Monster removal,,98069388
+Ultimate Providence,Trap,Counter,,,,,Y,Negation,,38891741
+Wiretap,Trap,Counter,,,,,Y,Trap negation,,34507039
+Abyss Stungray,Trap,Continuous,,,,,Y,Defense,,97232518
+Call of the Haunted,Trap,Continuous,,,,,Y,Revival,,97077563
+Fiendish Chain,Trap,Continuous,,,,,Y,Monster eff negation,,50078509
+Graveyard of Wandering Souls,Trap,Continuous,,,,,Y,Defense,2,98596596
+Lose 1 Turn,Trap,Continuous,,,,,Y,Monster eff negation,,24348804
+Metal Reflect Slime,Trap,Continuous,,,,,Y,Utility,2,26905245
+Mirror Wall,Trap,Continuous,,,,,Y,Battle winner,3,22359980
+Oasis of Dragon Souls,Trap,Continuous,,,,,Y,Revival,3,39122311
+Phantom Knights' Fog Blade,Trap,Continuous,,,,,Y,Utility,2,25542642
+Phantom Knights' Sword,Trap,Continuous,,,,,Y,Battle winner,3,61936647
+Powerful Rebirth,Trap,Continuous,,,,,Y,Revival,3,84298614
+Safe Zone,Trap,Continuous,,,,,Y,Defense,3,38296564
+Skill Drain,Trap,Continuous,,,,,Y,Monster eff negation,3,82732705
+Spiritual Swords of Revealing Light,Trap,Continuous,,,,,Y,Defense,2,78625592
+Swamp Mirrorer,Trap,Continuous,,,,,Y,Utility,2,50277973
