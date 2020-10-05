@@ -11,4 +11,5 @@ public class Card : ScriptableObject
     public string attribute;
     public int level;
     public int atk;
+    public string cardEffect;
 }

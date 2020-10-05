@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DraftPool : MonoBehaviour
 {
+    public CardDisplay cardPrefab;
     public List<Card> cards = new List<Card>();
     public List<Card> pack = new List<Card>();
 
@@ -24,8 +25,9 @@ public class DraftPool : MonoBehaviour
             card.attribute = row[4];
             int.TryParse(row[5], out card.level);
             int.TryParse(row[6], out card.atk);
+            card.cardEffect = row[11];
 
-            //Debug.Log(row[0] + " " + row[10] + " " + row[1] + " " + row[3] + " " + row[4] + " " + row[5] + " " + row[6]);
+            //Debug.Log(row[0] + " " + row[10] + " " + row[1] + " " + row[3] + " " + row[4] + " " + row[5] + " " + row[6] + " " + row[11]);
 
             cards.Add(card);
         }
@@ -41,6 +43,24 @@ public class DraftPool : MonoBehaviour
             //Debug.Log(rng + "-" + cards[rng].cardName);
             pack.Add(cards[rng]);
             cards.RemoveAt(rng);
+        }
+        DisplayPack();
+    }
+
+    public void DisplayPack()
+    {
+        for (int i = 0; i < pack.Count; i++)
+        {
+            CardDisplay card = Instantiate(cardPrefab, transform);
+            card.displaying = pack[i];
+            float transformAmount = ((float) i % 5) - ((float)pack.Count / 3 - 1) / 2;
+            float angle = transformAmount;
+            Vector3 position = new Vector3(
+                Mathf.Sin(angle * Mathf.Deg2Rad) * 35f,
+                (i / 5) - 1,
+                0
+                ) * 3f;
+            card.transform.localPosition = position;
         }
     }
 }
