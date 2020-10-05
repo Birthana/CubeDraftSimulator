@@ -25,7 +25,8 @@ public class CardInformationManager : MonoBehaviour
     public void Display(Card card)
     {
         cardName.text = card.cardName;
-        cardInformation.text = "Card Type: " + card.cardType + "\nType: " + card.cardType + "\nAttribute: " + card.attribute + "\nLevel/Link: " + card.level + "\nAttack: " + card.atk;
+        cardInformation.text = (card.cardType.Equals("Monster")) ? "Card Type: " + card.cardType + " / " + card.subType + "\nType: " + card.type + "\nAttribute: " + card.attribute + "\nLevel/Link: " + card.level + "\nAttack: " + card.atk
+                                    : "Card Type: " + card.cardType + " / " + card.subType;
         cardEffect.text = card.cardEffect;
     }
 }

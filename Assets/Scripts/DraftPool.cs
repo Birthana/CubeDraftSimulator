@@ -21,6 +21,7 @@ public class DraftPool : MonoBehaviour
             card.cardName = row[0];
             int.TryParse(row[10], out card.passcode);
             card.cardType = row[1];
+            card.subType = row[2];
             card.type = row[3];
             card.attribute = row[4];
             int.TryParse(row[5], out card.level);
