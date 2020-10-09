@@ -1,11 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class Player : MonoBehaviour
+public class Player : NetworkBehaviour
 {
+    //public GameObject cardTest;
     public List<string> main = new List<string>();
     public List<string> extra = new List<string>();
+
+    private void Start()
+    {
+        StartGame();
+    }
+
+    public void StartGame()
+    {
+        if (hasAuthority)
+            CmdSpawnCard();
+    }
+
+    [Command]
+    void CmdSpawnCard()
+    {
+        List<Card> pack = DraftPool.instance.OpenPack();
+        DraftPool.instance.DisplayPack(pack, gameObject);
+    }
+
+    [ClientRpc]
+    void RpcSpawnCard(GameObject card)
+    {
+        if (hasAuthority)
+        {
+            if(card != null)
+            {
+                card.SetActive(true);
+                Debug.Log("Card shown to owner player.");
+            }
+        }
+    }
 
     private void Update()
     {

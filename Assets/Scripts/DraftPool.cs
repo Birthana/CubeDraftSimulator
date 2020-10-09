@@ -1,12 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class DraftPool : MonoBehaviour
+public class DraftPool : NetworkBehaviour
 {
+    public static DraftPool instance = null;
     public CardDisplay cardPrefab;
     public List<Card> cards = new List<Card>();
-    public List<Card> pack = new List<Card>();
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {
@@ -32,23 +45,21 @@ public class DraftPool : MonoBehaviour
 
             cards.Add(card);
         }
-
-        OpenPack();
     }
 
-    public void OpenPack()
+    public List<Card> OpenPack()
     {
+        List<Card> newPack = new List<Card>();
         for (int i = 0; i < 15; i++)
         {
             int rng = Random.Range(0, cards.Count);
-            //Debug.Log(rng + "-" + cards[rng].cardName);
-            pack.Add(cards[rng]);
+            newPack.Add(cards[rng]);
             cards.RemoveAt(rng);
         }
-        DisplayPack();
+        return newPack;
     }
 
-    public void DisplayPack()
+    public void DisplayPack(List<Card> pack, GameObject ob)
     {
         for (int i = 0; i < pack.Count; i++)
         {
@@ -62,6 +73,7 @@ public class DraftPool : MonoBehaviour
                 0
                 ) * 3f;
             card.transform.localPosition = position;
+            NetworkServer.Spawn(card.gameObject, ob);
         }
     }
 }

@@ -1,10 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class CardDisplay : MonoBehaviour
+public class CardDisplay : NetworkBehaviour
 {
     public Card card;
+
+    private void Start()
+    {
+        if (!hasAuthority)
+        {
+            gameObject.SetActive(false);
+        }
+    }
 
     void OnMouseEnter()
     {
