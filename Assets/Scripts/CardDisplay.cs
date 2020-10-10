@@ -5,7 +5,7 @@ using Mirror;
 
 public class CardDisplay : NetworkBehaviour
 {
-    public Card card;
+    [SyncVar]public Card card;
 
     private void Start()
     {

@@ -5,11 +5,12 @@ using Mirror;
 
 public class Player : NetworkBehaviour
 {
-    //public GameObject cardTest;
+    public CardDisplay cardPrefab;
     public List<string> main = new List<string>();
     public List<string> extra = new List<string>();
 
-    private void Start()
+    [Client]
+    void Start()
     {
         StartGame();
     }
@@ -17,27 +18,36 @@ public class Player : NetworkBehaviour
     public void StartGame()
     {
         if (hasAuthority)
-            CmdSpawnCard();
+            CmdSpawnPack();
     }
 
     [Command]
-    void CmdSpawnCard()
+    void CmdSpawnPack()
     {
         List<Card> pack = DraftPool.instance.OpenPack();
-        DraftPool.instance.DisplayPack(pack, gameObject);
+        for (int i = 0; i < pack.Count; i++)
+        {
+            CardDisplay card = Instantiate(cardPrefab, transform);
+            card.displaying = pack[i];
+            float transformAmount = ((float)i % 5) - ((float)pack.Count / 3 - 1) / 2;
+            float angle = transformAmount;
+            Vector3 position = new Vector3(
+                Mathf.Sin(angle * Mathf.Deg2Rad) * 35f,
+                (i / 5) - 1,
+                0
+                ) * 3f;
+            card.transform.localPosition = position;
+            NetworkServer.Spawn(card.gameObject, gameObject);
+            RpcSetParent(card.gameObject);
+        }
     }
 
     [ClientRpc]
-    void RpcSpawnCard(GameObject card)
+    public void RpcSetParent(GameObject card)
     {
-        if (hasAuthority)
-        {
-            if(card != null)
-            {
-                card.SetActive(true);
-                Debug.Log("Card shown to owner player.");
-            }
-        }
+        card.transform.parent = transform;
+        if(isClientOnly)
+            card.transform.localPosition += transform.position;
     }
 
     private void Update()

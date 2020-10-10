@@ -6,9 +6,9 @@ using Mirror;
 public class DraftPool : NetworkBehaviour
 {
     public static DraftPool instance = null;
-    public CardDisplay cardPrefab;
-    public List<Card> cards = new List<Card>();
+    [SyncVar]public List<Card> cards = new List<Card>();
 
+    [Server]
     private void Awake()
     {
         if (instance == null)
@@ -21,6 +21,7 @@ public class DraftPool : NetworkBehaviour
         }
     }
 
+    [Server]
     private void Start()
     {
         TextAsset csv = Resources.Load<TextAsset>("pool");
@@ -57,23 +58,5 @@ public class DraftPool : NetworkBehaviour
             cards.RemoveAt(rng);
         }
         return newPack;
-    }
-
-    public void DisplayPack(List<Card> pack, GameObject ob)
-    {
-        for (int i = 0; i < pack.Count; i++)
-        {
-            CardDisplay card = Instantiate(cardPrefab, transform);
-            card.displaying = pack[i];
-            float transformAmount = ((float) i % 5) - ((float)pack.Count / 3 - 1) / 2;
-            float angle = transformAmount;
-            Vector3 position = new Vector3(
-                Mathf.Sin(angle * Mathf.Deg2Rad) * 35f,
-                (i / 5) - 1,
-                0
-                ) * 3f;
-            card.transform.localPosition = position;
-            NetworkServer.Spawn(card.gameObject, ob);
-        }
     }
 }
