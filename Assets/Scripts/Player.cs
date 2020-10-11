@@ -19,10 +19,8 @@ public class Player : NetworkBehaviour
     [ClientRpc]
     public void RpcStartGame()
     {
-        Debug.Log("Player Start");
         if (hasAuthority)
         {
-            Debug.Log("Player Start Game");
             CmdSpawnPack();
             for (int i = 15; i < cards.Count; i++)
             {
@@ -34,22 +32,33 @@ public class Player : NetworkBehaviour
     [Command]
     void CmdSpawnPack()
     {
-        int numberOfPacks = DraftPool.instance.cards.Count / DraftPool.instance.numberOfCardsPerPack;
-        Debug.Log("" + DraftPool.instance.cards.Count);
+        int numberOfPacks = DraftPool.instance.GetCount() / DraftPool.instance.numberOfCardsPerPack;
         for (int j = 0; j < numberOfPacks / 3; j++)
         {
-            List<GameObject> pack = DraftPool.instance.OpenPack();
-            for (int i = 0; i < pack.Count; i++)
-            {
-                GameObject cardObject = Instantiate(cardPrefab, transform);
-                NetworkServer.Spawn(cardObject, gameObject);
-                RpcSpawnPack(cardObject, i, pack[i], pack.Count);
-            }
+            RpcGetPack();
         }
     }
 
     [ClientRpc]
-    public void RpcSpawnPack(GameObject cardObject, int i , GameObject pack, int packCount)
+    public void RpcGetPack()
+    {
+        List<Card> pack = DraftPool.instance.OpenPack();
+        for (int i = 0; i < pack.Count; i++)
+        {
+            CmdAfterPackSpawn(i, pack);
+        }
+    }
+
+    [Command]
+    public void CmdAfterPackSpawn(int i, List<Card> pack)
+    {
+        GameObject cardObject = Instantiate(cardPrefab, transform);
+        NetworkServer.Spawn(cardObject, gameObject);
+        RpcSpawnPack(cardObject, i, pack[i], pack.Count);
+    }
+
+    [ClientRpc]
+    public void RpcSpawnPack(GameObject cardObject, int i , Card pack, int packCount)
     {
         CardDisplay card = cardObject.GetComponent<CardDisplay>();
         card.displaying = pack;
@@ -88,7 +97,7 @@ public class Player : NetworkBehaviour
             RaycastHit2D mouseHit = Physics2D.Raycast(mouseRay.origin, Vector2.zero);
             if (mouseHit)
             {
-                Card chosenCard = mouseHit.collider.gameObject.GetComponent<CardDisplay>().displaying.GetComponent<Card>();
+                Card chosenCard = mouseHit.collider.gameObject.GetComponent<CardDisplay>().displaying;
                 Debug.Log(chosenCard.passcode);
                 if (chosenCard.subType.Equals("Link"))
                 {

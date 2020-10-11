@@ -830,8 +830,6 @@ MonoBehaviour:
   playerSpawnMethod: 0
   spawnPrefabs:
   - {fileID: 666610305989300209, guid: a954878a26df94f488c71e43d6087ab1, type: 3}
-  - {fileID: 6020460359031581038, guid: 0d84e6529d3c1ce4daf06ebd3877a9c6, type: 3}
-  - {fileID: 1467985040604651744, guid: b4f549f8ca31c1549aabd9110639b1b0, type: 3}
   draftPool: {fileID: 0}
   players: []
 --- !u!4 &902355296
