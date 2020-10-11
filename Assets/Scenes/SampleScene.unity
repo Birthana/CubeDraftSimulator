@@ -237,7 +237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.7999878, y: 3.600006}
+  m_AnchoredPosition: {x: -1.8000488, y: 3.5999756}
   m_SizeDelta: {x: -42.458313, y: -24.767334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &367266827
@@ -683,7 +683,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.7001953, y: 6.0700073}
+  m_AnchoredPosition: {x: -2.7001953, y: 6.0699463}
   m_SizeDelta: {x: -61.004547, y: -613.424}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851338796
@@ -831,8 +831,9 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 666610305989300209, guid: a954878a26df94f488c71e43d6087ab1, type: 3}
   - {fileID: 6020460359031581038, guid: 0d84e6529d3c1ce4daf06ebd3877a9c6, type: 3}
-  numberOfPlayers: 0
+  - {fileID: 1467985040604651744, guid: b4f549f8ca31c1549aabd9110639b1b0, type: 3}
   draftPool: {fileID: 0}
+  players: []
 --- !u!4 &902355296
 Transform:
   m_ObjectHideFlags: 0
@@ -1023,7 +1024,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.7001038, y: 332}
+  m_AnchoredPosition: {x: -2.7000732, y: 332}
   m_SizeDelta: {x: -61.00461, y: -687.62067}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390189853

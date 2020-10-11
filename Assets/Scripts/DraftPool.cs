@@ -6,23 +6,21 @@ using Mirror;
 public class DraftPool : NetworkBehaviour
 {
     public static DraftPool instance = null;
-    [SyncVar]public List<Card> cards = new List<Card>();
+    public GameObject cardInfoPrefab;
+    [SyncVar]public int numberOfPlayers;
+    public int numberOfCardsPerPack = 15;
+    public SyncListGameObject cards = new SyncListGameObject();
 
-    [Server]
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
 
-    [Server]
-    private void Start()
+    [ClientRpc]
+    public void RpcSpawnCardInfo()
     {
         TextAsset csv = Resources.Load<TextAsset>("pool");
 
@@ -31,27 +29,47 @@ public class DraftPool : NetworkBehaviour
         for (int i = 1; i < data.Length; i++)
         {
             string[] row = data[i].Split(new char[] { ',' });
-            Card card = ScriptableObject.CreateInstance<Card>();
-            card.cardName = row[0];
-            int.TryParse(row[10], out card.passcode);
-            card.cardType = row[1];
-            card.subType = row[2];
-            card.type = row[3];
-            card.attribute = row[4];
-            int.TryParse(row[5], out card.level);
-            int.TryParse(row[6], out card.atk);
-            card.cardEffect = row[11];
-
-            //Debug.Log(row[0] + " " + row[10] + " " + row[1] + " " + row[3] + " " + row[4] + " " + row[5] + " " + row[6] + " " + row[11]);
-
-            cards.Add(card);
+            CmdSpawnCardInfo(row);
         }
     }
 
-    public List<Card> OpenPack()
+    public void CmdSpawnCardInfo(string[] row)
     {
-        List<Card> newPack = new List<Card>();
-        for (int i = 0; i < 15; i++)
+        GameObject cardObject = Instantiate(cardInfoPrefab, transform);
+        NetworkServer.Spawn(cardObject);
+        RpcSpawnCardInformation(cardObject, row);
+    }
+
+    public void RpcSpawnCardInformation(GameObject cardObject, string[] row)
+    {
+        //Debug.Log("Spawning Card Info.");
+        Card card = cardObject.GetComponent<Card>();
+        card.cardName = row[0];
+        int.TryParse(row[10], out card.passcode);
+        card.cardType = row[1];
+        card.subType = row[2];
+        card.type = row[3];
+        card.attribute = row[4];
+        int.TryParse(row[5], out card.level);
+        int.TryParse(row[6], out card.atk);
+        card.cardEffect = row[11];
+
+        //Debug.Log(row[0] + " " + row[10] + " " + row[1] + " " + row[3] + " " + row[4] + " " + row[5] + " " + row[6] + " " + row[11]);
+
+        cards.Add(cardObject);
+        RpcSetParent(cardObject);
+    }
+
+    [ClientRpc]
+    public void RpcSetParent(GameObject card)
+    {
+        card.transform.parent = transform;
+    }
+
+    public List<GameObject> OpenPack()
+    {
+        List<GameObject> newPack = new List<GameObject>();
+        for (int i = 0; i < numberOfCardsPerPack; i++)
         {
             int rng = Random.Range(0, cards.Count);
             newPack.Add(cards[rng]);

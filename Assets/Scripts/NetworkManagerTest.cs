@@ -5,8 +5,8 @@ using Mirror;
 
 public class NetworkManagerTest : NetworkManager
 {
-    public int numberOfPlayers = 0;
     public GameObject draftPool;
+    public List<GameObject> players = new List<GameObject>();
 
     public override void OnServerAddPlayer(NetworkConnection conn)
     {
@@ -17,12 +17,21 @@ public class NetworkManagerTest : NetworkManager
         }
         GameObject player = Instantiate(playerPrefab);
         NetworkServer.AddPlayerForConnection(conn, player);
-        numberOfPlayers++;
+        players.Add(player);
+        DraftPool.instance.numberOfPlayers++;
+
+        if (DraftPool.instance.numberOfPlayers == 2)
+        {
+            draftPool.GetComponent<DraftPool>().RpcSpawnCardInfo();
+            foreach (GameObject newPlayer in players)
+            {
+                newPlayer.GetComponent<Player>().RpcStartGame();
+            }
+        }
     }
 
     public override void OnServerDisconnect(NetworkConnection conn)
     {
         base.OnServerDisconnect(conn);
-        numberOfPlayers--;
     }
 }

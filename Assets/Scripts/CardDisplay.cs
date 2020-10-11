@@ -5,7 +5,7 @@ using Mirror;
 
 public class CardDisplay : NetworkBehaviour
 {
-    [SyncVar]public Card card;
+    [SyncVar]public GameObject card;
 
     private void Start()
     {
@@ -17,24 +17,18 @@ public class CardDisplay : NetworkBehaviour
 
     void OnMouseEnter()
     {
-        CardInformationManager.instance.Display(card);
+        CardInformationManager.instance.Display(card.GetComponent<Card>());
     }
 
-    public Card displaying
+    public GameObject displaying
     {
         set
         {
             card = value;
-            DisplayCard();
         }
         get
         {
             return card;
         }
-    }
-
-    public void DisplayCard()
-    {
-
     }
 }

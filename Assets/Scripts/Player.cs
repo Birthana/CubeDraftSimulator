@@ -5,41 +5,71 @@ using Mirror;
 
 public class Player : NetworkBehaviour
 {
-    public CardDisplay cardPrefab;
+    public GameObject cardPrefab;
+    public SyncListGameObject cards = new SyncListGameObject();
     public List<string> main = new List<string>();
     public List<string> extra = new List<string>();
 
     [Client]
     void Start()
     {
-        StartGame();
+        //StartGame();
     }
 
-    public void StartGame()
+    [ClientRpc]
+    public void RpcStartGame()
     {
+        Debug.Log("Player Start");
         if (hasAuthority)
+        {
+            Debug.Log("Player Start Game");
             CmdSpawnPack();
+            for (int i = 15; i < cards.Count; i++)
+            {
+                cards[i].SetActive(false);
+            }
+        }
     }
 
     [Command]
     void CmdSpawnPack()
     {
-        List<Card> pack = DraftPool.instance.OpenPack();
-        for (int i = 0; i < pack.Count; i++)
+        int numberOfPacks = DraftPool.instance.cards.Count / DraftPool.instance.numberOfCardsPerPack;
+        Debug.Log("" + DraftPool.instance.cards.Count);
+        for (int j = 0; j < numberOfPacks / 3; j++)
         {
-            CardDisplay card = Instantiate(cardPrefab, transform);
-            card.displaying = pack[i];
-            float transformAmount = ((float)i % 5) - ((float)pack.Count / 3 - 1) / 2;
-            float angle = transformAmount;
-            Vector3 position = new Vector3(
-                Mathf.Sin(angle * Mathf.Deg2Rad) * 35f,
-                (i / 5) - 1,
-                0
-                ) * 3f;
-            card.transform.localPosition = position;
-            NetworkServer.Spawn(card.gameObject, gameObject);
-            RpcSetParent(card.gameObject);
+            List<GameObject> pack = DraftPool.instance.OpenPack();
+            for (int i = 0; i < pack.Count; i++)
+            {
+                GameObject cardObject = Instantiate(cardPrefab, transform);
+                NetworkServer.Spawn(cardObject, gameObject);
+                RpcSpawnPack(cardObject, i, pack[i], pack.Count);
+            }
         }
+    }
+
+    [ClientRpc]
+    public void RpcSpawnPack(GameObject cardObject, int i , GameObject pack, int packCount)
+    {
+        CardDisplay card = cardObject.GetComponent<CardDisplay>();
+        card.displaying = pack;
+        float transformAmount = ((float)i % 5) - ((float)packCount / 3 - 1) / 2;
+        float angle = transformAmount;
+        Vector3 position = new Vector3(
+            Mathf.Sin(angle * Mathf.Deg2Rad) * 35f,
+            (i / 5) - 1,
+            0
+            ) * 3f;
+        cardObject.transform.localPosition = position;
+        if(hasAuthority)
+            CmdFinishSpawnPack(cardObject);
+    }
+
+    [Command]
+    public void CmdFinishSpawnPack(GameObject cardObject)
+    {
+        RpcSetParent(cardObject);
+        cards.Add(cardObject);
     }
 
     [ClientRpc]
@@ -58,7 +88,7 @@ public class Player : NetworkBehaviour
             RaycastHit2D mouseHit = Physics2D.Raycast(mouseRay.origin, Vector2.zero);
             if (mouseHit)
             {
-                Card chosenCard = mouseHit.collider.gameObject.GetComponent<CardDisplay>().displaying;
+                Card chosenCard = mouseHit.collider.gameObject.GetComponent<CardDisplay>().displaying.GetComponent<Card>();
                 Debug.Log(chosenCard.passcode);
                 if (chosenCard.subType.Equals("Link"))
                 {
@@ -88,4 +118,5 @@ public class Player : NetworkBehaviour
         ydkFile += "!side";
         return ydkFile;
     }
+
 }

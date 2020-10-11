@@ -46,8 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  cardPrefab: {fileID: 260657102, guid: a954878a26df94f488c71e43d6087ab1, type: 3}
-  cards: []
+  cardInfoPrefab: {fileID: 1467985040604651744, guid: b4f549f8ca31c1549aabd9110639b1b0, type: 3}
+  numberOfPlayers: 0
+  numberOfCardsPerPack: 15
 --- !u!114 &6020460359031581025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +62,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneId: 0
-  serverOnly: 0
+  serverOnly: 1
   m_AssetId: 
   hasSpawned: 0

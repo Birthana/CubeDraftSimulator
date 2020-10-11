@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Card : ScriptableObject
+public class Card : MonoBehaviour
 {
     public string cardName;
     public int passcode;
