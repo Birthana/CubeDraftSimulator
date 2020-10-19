@@ -5,56 +5,35 @@ using Mirror;
 
 public class Player : NetworkBehaviour
 {
-    public GameObject cardPrefab;
-    public SyncListGameObject cards = new SyncListGameObject();
+    public CardDisplay cardPrefab;
+    public List<List<CardDisplay>> packs = new List<List<CardDisplay>>();
+    public List<CardDisplay> cards = new List<CardDisplay>();
     public List<string> main = new List<string>();
     public List<string> extra = new List<string>();
-
-    [Client]
-    void Start()
-    {
-        //StartGame();
-    }
 
     [ClientRpc]
     public void RpcStartGame()
     {
         if (hasAuthority)
         {
-            CmdSpawnPack();
-            for (int i = 15; i < cards.Count; i++)
-            {
-                cards[i].SetActive(false);
-            }
+            CmdAfterPackSpawn();
         }
     }
 
     [Command]
-    void CmdSpawnPack()
+    public void CmdAfterPackSpawn()
     {
-        int numberOfPacks = DraftPool.instance.GetCount() / DraftPool.instance.numberOfCardsPerPack;
+        int numberOfPacks = 21;
         for (int j = 0; j < numberOfPacks / 3; j++)
         {
-            RpcGetPack();
+            List<Card> pack = DraftPool.instance.OpenPack();
+            for (int i = 0; i < pack.Count; i++)
+            {
+                CardDisplay cardObject = Instantiate(cardPrefab, transform);
+                NetworkServer.Spawn(cardObject.gameObject, gameObject);
+                RpcSpawnPack(cardObject.gameObject, i, pack[i], pack.Count);
+            }
         }
-    }
-
-    [ClientRpc]
-    public void RpcGetPack()
-    {
-        List<Card> pack = DraftPool.instance.OpenPack();
-        for (int i = 0; i < pack.Count; i++)
-        {
-            CmdAfterPackSpawn(i, pack);
-        }
-    }
-
-    [Command]
-    public void CmdAfterPackSpawn(int i, List<Card> pack)
-    {
-        GameObject cardObject = Instantiate(cardPrefab, transform);
-        NetworkServer.Spawn(cardObject, gameObject);
-        RpcSpawnPack(cardObject, i, pack[i], pack.Count);
     }
 
     [ClientRpc]
@@ -70,15 +49,22 @@ public class Player : NetworkBehaviour
             0
             ) * 3f;
         cardObject.transform.localPosition = position;
-        if(hasAuthority)
-            CmdFinishSpawnPack(cardObject);
+        cards.Add(card);
+        if (cards.Count == 15)
+        {
+            packs.Add(cards);
+            cards = new List<CardDisplay>();
+        }
+        if (hasAuthority)
+        {
+            CmdFinishSpawnPack(cardObject.gameObject);
+        }
     }
 
     [Command]
     public void CmdFinishSpawnPack(GameObject cardObject)
     {
         RpcSetParent(cardObject);
-        cards.Add(cardObject);
     }
 
     [ClientRpc]
@@ -91,6 +77,7 @@ public class Player : NetworkBehaviour
 
     private void Update()
     {
+        if (!hasAuthority) return;
         if (Input.GetMouseButtonDown(0))
         {
             var mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);

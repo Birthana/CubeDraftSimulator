@@ -5,7 +5,8 @@ using Mirror;
 
 public class CardDisplay : NetworkBehaviour
 {
-    [SyncVar]public Card card;
+    public Card card;
+    public string cardName;
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class CardDisplay : NetworkBehaviour
         set
         {
             card = value;
+            cardName = card.cardName;
         }
         get
         {
